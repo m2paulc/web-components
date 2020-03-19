@@ -22,3 +22,6 @@ Web components are set of web platform API's that allow us to create custom, reu
   * template tag stores markup on page
   * include both HTML and CSS in templates
   * use slots to add custom text
+
+## Author
+Paul Caoile - Front-end Developer
