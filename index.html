@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>User Card Web Component</title>
+	</head>
+	<body>
+		<h2>Test World - Creating Web Components</h2>
+		<!-- passing in attribute -->
+		<user-card
+			name="John Doe"
+			title="Front-end Developer"
+			avatar="https://randomuser.me/api/portraits/men/11.jpg"
+		>
+			<div slot="email">johndoe@email.com</div>
+			<div slot="phone">(555)-555-5555</div>
+		</user-card>
+		<!-- now you can reuse the user-card Component -->
+		<user-card
+			name="Jane Doe"
+			title="Full Stack Developer"
+			avatar="https://randomuser.me/api/portraits/women/1.jpg"
+		>
+			<div slot="email">janedoe@email.com</div>
+			<div slot="phone">(555)-555-5555</div>
+		</user-card>
+		<script src="userCard.js"></script>
+	</body>
+</html>
